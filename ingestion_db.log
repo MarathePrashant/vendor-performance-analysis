@@ -1,0 +1,80 @@
+2026-08-25 20:22:56,139 - INFO - ========================================
+2026-08-25 20:22:56,139 - INFO - Starting data ingestion
+2026-08-25 20:22:56,139 - INFO - ========================================
+2026-08-25 20:22:56,139 - INFO - Reading file: begin_inventory.csv
+2026-08-25 20:22:56,498 - INFO - File: begin_inventory.csv | Rows: 206529 | Columns: 9
+2026-08-25 20:22:58,723 - INFO - Successfully loaded table 'begin_inventory' with 206529 rows.
+2026-08-25 20:22:58,724 - INFO - Reading file: end_inventory.csv
+2026-08-25 20:22:59,135 - INFO - File: end_inventory.csv | Rows: 224489 | Columns: 9
+2026-08-25 20:23:01,379 - INFO - Successfully loaded table 'end_inventory' with 224489 rows.
+2026-08-25 20:23:01,380 - INFO - Reading file: purchases.csv
+2026-08-25 20:23:07,694 - INFO - File: purchases.csv | Rows: 2372474 | Columns: 16
+2026-08-25 20:23:51,899 - INFO - Successfully loaded table 'purchases' with 2372474 rows.
+2026-08-25 20:23:51,900 - INFO - Reading file: purchase_prices.csv
+2026-08-25 20:23:52,073 - INFO - File: purchase_prices.csv | Rows: 12261 | Columns: 9
+2026-08-25 20:23:52,292 - INFO - Successfully loaded table 'purchase_prices' with 12261 rows.
+2026-08-25 20:23:52,292 - INFO - Reading file: sales.csv
+2026-08-25 20:24:46,742 - INFO - File: sales.csv | Rows: 12825363 | Columns: 14
+2026-08-25 20:31:21,591 - INFO - Successfully loaded table 'sales' with 12825363 rows.
+2026-08-25 20:31:21,607 - INFO - Reading file: vendor_invoice.csv
+2026-08-25 20:31:23,187 - INFO - File: vendor_invoice.csv | Rows: 5543 | Columns: 10
+2026-08-25 20:31:23,338 - INFO - Successfully loaded table 'vendor_invoice' with 5543 rows.
+2026-08-25 20:31:23,338 - INFO - Total Time Taken: 8.45 minutes
+2026-08-25 20:31:23,340 - INFO - Ingestion Complete
+2026-08-28 14:13:44,329 - INFO - Starting data ingestion
+2026-08-28 14:13:44,329 - INFO - Reading file: begin_inventory.csv
+2026-08-28 14:13:44,782 - INFO - File: begin_inventory.csv | Rows: 206529 | Columns: 9
+2026-08-28 14:13:47,599 - INFO - Successfully loaded table 'begin_inventory' with 206529 rows.
+2026-08-28 14:13:47,599 - INFO - Reading file: end_inventory.csv
+2026-08-28 14:13:48,060 - INFO - File: end_inventory.csv | Rows: 224489 | Columns: 9
+2026-08-28 14:13:51,299 - INFO - Successfully loaded table 'end_inventory' with 224489 rows.
+2026-08-28 14:13:51,307 - INFO - Reading file: purchases.csv
+2026-08-28 14:13:58,725 - INFO - File: purchases.csv | Rows: 2372474 | Columns: 16
+2026-08-28 14:14:58,743 - INFO - Successfully loaded table 'purchases' with 2372474 rows.
+2026-08-28 14:14:58,749 - INFO - Reading file: purchase_prices.csv
+2026-08-28 14:14:58,968 - INFO - File: purchase_prices.csv | Rows: 12261 | Columns: 9
+2026-08-28 14:14:59,165 - INFO - Successfully loaded table 'purchase_prices' with 12261 rows.
+2026-08-28 14:14:59,165 - INFO - Reading file: sales.csv
+2026-08-28 14:15:32,929 - INFO - File: sales.csv | Rows: 12825363 | Columns: 14
+2026-08-28 14:20:28,311 - INFO - Starting data ingestion
+2026-08-28 14:20:28,311 - INFO - Reading file: begin_inventory.csv
+2026-08-28 14:20:28,762 - INFO - File: begin_inventory.csv | Rows: 206529 | Columns: 9
+2026-08-28 14:20:31,861 - INFO - Successfully loaded table 'begin_inventory' with 206529 rows.
+2026-08-28 14:20:31,861 - INFO - Reading file: end_inventory.csv
+2026-08-28 14:20:32,346 - INFO - File: end_inventory.csv | Rows: 224489 | Columns: 9
+2026-08-28 14:20:36,285 - INFO - Successfully loaded table 'end_inventory' with 224489 rows.
+2026-08-28 14:20:36,285 - INFO - Reading file: purchases.csv
+2026-08-28 14:20:43,890 - INFO - File: purchases.csv | Rows: 2372474 | Columns: 16
+2026-08-28 14:21:46,431 - INFO - Successfully loaded table 'purchases' with 2372474 rows.
+2026-08-28 14:21:46,433 - INFO - Reading file: purchase_prices.csv
+2026-08-28 14:21:46,852 - INFO - File: purchase_prices.csv | Rows: 12261 | Columns: 9
+2026-08-28 14:21:47,355 - INFO - Successfully loaded table 'purchase_prices' with 12261 rows.
+2026-08-28 14:21:47,355 - INFO - Reading file: sales.csv
+2026-08-28 14:22:51,490 - INFO - File: sales.csv | Rows: 12825363 | Columns: 14
+2026-08-28 14:31:47,646 - INFO - Successfully loaded table 'sales' with 12825363 rows.
+2026-08-28 14:31:47,661 - INFO - Reading file: vendor_invoice.csv
+2026-08-28 14:31:49,679 - INFO - File: vendor_invoice.csv | Rows: 5543 | Columns: 10
+2026-08-28 14:31:49,906 - INFO - Successfully loaded table 'vendor_invoice' with 5543 rows.
+2026-08-28 14:31:49,906 - INFO - Total Time Taken: 11.36 minutes
+2026-08-28 14:31:49,906 - INFO - Ingestion Complete
+2026-08-29 15:41:02,019 - INFO - Starting data ingestion
+2026-08-29 15:41:02,019 - INFO - Reading file: begin_inventory.csv
+2026-08-29 15:41:02,517 - INFO - File: begin_inventory.csv | Rows: 206529 | Columns: 9
+2026-08-29 15:41:05,315 - INFO - Successfully loaded table 'begin_inventory' with 206529 rows.
+2026-08-29 15:41:05,317 - INFO - Reading file: end_inventory.csv
+2026-08-29 15:41:05,804 - INFO - File: end_inventory.csv | Rows: 224489 | Columns: 9
+2026-08-29 15:41:08,982 - INFO - Successfully loaded table 'end_inventory' with 224489 rows.
+2026-08-29 15:41:08,982 - INFO - Reading file: purchases.csv
+2026-08-29 15:41:15,990 - INFO - File: purchases.csv | Rows: 2372474 | Columns: 16
+2026-08-29 15:42:12,092 - INFO - Successfully loaded table 'purchases' with 2372474 rows.
+2026-08-29 15:42:12,094 - INFO - Reading file: purchase_prices.csv
+2026-08-29 15:42:12,292 - INFO - File: purchase_prices.csv | Rows: 12261 | Columns: 9
+2026-08-29 15:42:12,470 - INFO - Successfully loaded table 'purchase_prices' with 12261 rows.
+2026-08-29 15:42:12,470 - INFO - Reading file: sales.csv
+2026-08-29 15:42:40,326 - INFO - File: sales.csv | Rows: 12825363 | Columns: 14
+2026-08-29 15:52:13,542 - INFO - Successfully loaded table 'sales' with 12825363 rows.
+2026-08-29 15:52:13,562 - INFO - Reading file: vendor_invoice.csv
+2026-08-29 15:52:18,266 - INFO - File: vendor_invoice.csv | Rows: 5543 | Columns: 10
+2026-08-29 15:52:18,696 - INFO - Successfully loaded table 'vendor_invoice' with 5543 rows.
+2026-08-29 15:52:18,696 - INFO - Total Time Taken: 11.28 minutes
+2026-08-29 15:52:18,696 - INFO - Ingestion Complete
