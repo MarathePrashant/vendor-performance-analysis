@@ -255,5 +255,3 @@ if __name__ == '__main__':
 
         # closing database connection
         conn.close()
-
-1:21
