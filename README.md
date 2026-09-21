@@ -5,45 +5,115 @@ Prepared By: Prashant Marathe
 Target Role: Junior Data Analyst / Data Analyst  
 Tech Stack: Python (Pandas, NumPy, SciPy, Matplotlib, Seaborn), SQL (SQLite, CTEs, Joins), Power BI
 
+## Turning Vendor and Sales Data into Actionable Business Insights
 
-# Executive Summary
-Every company wants a smooth supply chain, but hidden inefficiencies and vendor bottlenecks often eat into profits. This project moves past the guesswork to uncover exactly how vendor partnerships are performing, where the supply chain is most vulnerable, and why certain inventory isn't moving. 
+Managing vendors is not just about tracking how much they sell.  
+Businesses also need to understand **which vendors contribute the most revenue, where profit is coming from, how purchasing compares with sales, and where potential supply-chain inefficiencies exist.**
 
-By extracting and transforming raw procurement and sales logs into actionable insights, this analysis provides a data-backed roadmap to optimize supply chain operations, reduce capital tied up in stagnant stock, and mitigate vendor concentration risks.
+This project analyzes vendor, purchasing, sales, pricing, and profitability data to answer those questions using **Python, SQL/SQLite concepts, and Power BI**.
 
-
-# The Approach & Methodology
-I let the data drive the narrative through a structured, end-to-end analytics pipeline:
-1. Data Extraction & Ingestion: Developed robust Python scripts (`Vendor_Analysis.py`) utilizing `SQLAlchemy` and `pandas` to automate the ingestion of raw CSV logs into a centralized SQLite database (`inventory.db`).
-2. Data Transformation & Aggregation (SQL): Wrote complex SQL queries featuring Common Table Expressions (CTEs) and multi-table joins to crunch numbers on pricing, performance, and turnover rates across purchases, invoices, and sales data.
-3. Exploratory Data Analysis & Statistics (Python): Leveraged `pandas`, `matplotlib`, and `seaborn` to perform extensive EDA (`Vendor_Performance_Analysis.py`). Applied statistical hypothesis testing (`SciPy`) to determine if there were significant differences in profit margins between top-performing and low-performing vendors.
-4. Data Visualization (Power BI): Translated complex statistical findings into interactive dashboards accessible to non-technical stakeholders (Supply Chain Managers and the Executive Team).
-
-# Key Exploratory Data Analysis (EDA) Insights
-
-# Summary Statistics
-Analyzed over 50,000 historical records spanning 24 months, encompassing 120 unique vendors and 3,500 product SKUs.
-Vendor Concentration (Risk Factor): The top 5 vendors account for 68% of total procurement spend and 72% of total inventory volume, highlighting a severe dependency risk.
-Delivery Performance: The average On-Time Delivery (OTD) rate is 82%. However, the top quartile achieves 96% OTD, while the bottom quartile averages only 64%.
-Quality & Rejection Rates: Average defect rate is 3.2%. Alarmingly, just 2 specific vendors contribute to over 40% of all returned or defective items.
-Inventory Health (Capital Tied Up): Approximately 22% of total inventory value is "slow-moving" (no sales movement in >90 days), representing $450,000 in tied-up capital.
-Pricing Variance: Comparable raw materials showed up to a 14% price variance** across vendors, indicating missed opportunities for bulk purchasing discounts.
-
-# Trend Analysis (Performance Over Time)
-Seasonal Volatility: Month-over-month data reveals a consistent 18% increase in average vendor lead times during Q3 and Q4 peak seasons.
-OTD Degradation: Over the trailing 12 months, the aggregate OTD rate across top-tier vendors has degraded from 92% to 85%.
-Expenditure vs. Quality: A 12% increase in Q2 procurement spend correlated with a 4% spike in defect rates, suggesting vendor quality control fails to scale with volume.
-
-# Statistical Testing & Validation
-Conducted an Independent Two-Sample T-Test to evaluate profit margin discrepancies:
-Null Hypothesis (H0): No significant difference in profit margins between top-performing (top 25% sales) and low-performing (bottom 25% sales) vendors.
-Finding: Calculated 95% Confidence Intervals and utilized `scipy.stats.ttest_ind` (equal_var=False) to validate whether low-performing vendors systematically offer higher margins, informing pricing and promotional strategies.
-
-# The Business Impact & Strategic Recommendations
-The quantitative findings translated directly into three major strategic recommendations:
-1. Diversify Vendors: Dilute the 68% dependency on top-tier suppliers to protect the supply chain from sudden seasonal disruptions and degrading lead times.
-2. Negotiate Smarter Bulk Purchases: Leverage the identified 14% pricing variance to enforce standard pricing across identical SKUs.
-3. Clear Slow-Moving Inventory: Liquidate the $450k tied up in stagnant stock (>90 days) to free up cash flow and transition from reactive purchasing to predictive ordering ahead of Q3/Q4.
+The final result is an interactive Power BI dashboard designed to help business teams quickly understand vendor and product performance and make more data-driven procurement decisions.
 
 
-Please check out the attached Python scripts and SQL queries in this repository for the complete code implementation.
+## 📌 Project Overview
+
+The objective of this project was to analyze vendor and product-level sales data and transform raw transactional information into a business intelligence solution.
+
+I worked through the analysis from **data validation → transformation → data modeling → KPI development → dashboard design → business insights**.
+
+The analysis focuses on:
+
+- Vendor performance
+- Sales and purchasing trends
+- Gross profitability
+- Gross margin
+- Product/brand performance
+- Sales-to-purchase relationship
+- Procurement efficiency
+- Potential inventory and supply-chain risks
+
+## 🎯 Business Questions
+
+The project was designed around practical business questions:
+
+- Which vendors generate the highest sales?
+- Which vendors contribute the most gross profit?
+- How does purchasing compare with sales?
+- Which brands/products generate strong revenue?
+- Which brands contribute the most profit?
+- How does profitability vary across vendors and products?
+- Which vendors have stronger sales-to-purchase ratios?
+- Where can procurement and inventory decisions be improved?
+
+
+## 📊 Dataset
+
+The dataset contains 10,648 records and 19 columns at the vendor/brand level.
+
+### Key fields
+
+| Category | Fields |
+|---|---|
+| Vendor | VendorNumber, VendorName |
+| Product | Brand, Description |
+| Purchasing | PurchasePrice, TotalPurchaseQuantity, TotalPurchaseDollars |
+| Sales | ActualPrice, TotalSalesQuantity, TotalSalesDollars |
+| Costs | FreightCost, TotalExciseTax |
+| Profitability | GrossProfit, GrossMarginPct |
+| Inventory | Volume, StockTurnover |
+| Pricing | AveragePurchasePrice, AverageSalesPrice |
+| Efficiency | SalesToPurchaseRatio |
+
+
+## 🛠️ Tools & Technologies
+
+### Data Analysis
+- Python
+- Pandas
+- NumPy
+
+### Business Intelligence
+- Power BI Desktop
+- Power Query
+- DAX
+
+### Data & Querying
+- CSV
+- SQL / SQLite concepts
+
+### Data Modeling
+- Fact and dimension tables
+- One-to-many relationships
+- Filter context
+- KPI measures
+
+## 🔄 Project Workflow
+
+### 1. Data Understanding
+I first examined the structure, columns, data types, missing values, and overall quality of the dataset.
+
+This helped establish the grain of the data and identify which metrics could be reliably used for analysis.
+
+### 2. Data Cleaning & Transformation
+Using Power Query, the dataset was prepared for reporting by:
+
+- Reviewing column quality
+- Validating data types
+- Checking missing values
+- Removing unnecessary transformation steps
+- Validating vendor and brand uniqueness
+- Preparing the data for Power BI modeling
+
+An important finding was that some records had missing sales-related metrics because they had **zero sales quantity and zero sales revenue**. These values were treated as meaningful business nulls rather than blindly replacing them with zero.
+
+### 3. Data Validation
+I created validation queries to check whether important financial calculations reconciled correctly.
+
+Examples include:
+Purchase Dollars ≈ Purchase Price × Purchase Quantity
+
+Sales Dollars ≈ Actual Price × Sales Quantity
+
+Gross Profit = Sales Dollars − Purchase Dollars
+
+Gross Margin % = Gross Profit / Sales
