@@ -44,7 +44,7 @@ This project evaluates supplier delivery timeliness, procurement lead times, def
 ## 👤 Author
 
 **Prashant Marathe**
-- LinkedIn: [linkedin.com/in/prashantmarathe17](https://www.linkedin.com/in/prashantmarathe17)[cite: 1]
-- Portfolio Website: [prashant-marathe.framer.website](https://prashant-marathe.framer.website/)[cite: 1]
-- Email: [p04747391@gmail.com](mailto:p04747391@gmail.com)[cite: 1]
-- Location: Pune, Maharashtra, India[cite: 1]
+- LinkedIn: [linkedin.com/in/prashantmarathe17](https://www.linkedin.com/in/prashantmarathe17)
+- Portfolio Website: [prashant-marathe.framer.website](https://prashant-marathe.framer.website/)
+- Email: [p04747391@gmail.com](mailto:p04747391@gmail.com)
+- Location: Pune, Maharashtra, India
