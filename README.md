@@ -1,21 +1,35 @@
-# 📦 Vendor Performance & Procurement SLA Analytics
+---
 
-[![SQL](https://img.shields.io/badge/SQL-Advanced%20Queries-CC292B?style=flat-square&logo=postgresql)](#)
-[![Power BI](https://img.shields.io/badge/Power_BI-Interactive_Dashboard-F2C811?style=flat-square&logo=powerbi)](#)
-[![Excel](https://img.shields.io/badge/Excel-Data_Modeling-217346?style=flat-square&logo=microsoftexcel)](#)
+## 📊 Key Business Insights
 
-## 📌 Business Problem
-Supply chain disruptions and supplier delays significantly inflate inventory carrying costs and reduce customer fulfillment rates. This project evaluates supplier lead times, delivery reliability (On-Time In-Full / OTIF), defect rates, and unit pricing variance across multiple vendors to identify SLA compliance gaps and optimize procurement spend.
+* **Supplier Concentration:** Top 3 suppliers accounted for **64% of total procurement expenditure**, presenting high supply-chain dependency risk.
+* **OTIF Compliance Deficit:** Two primary suppliers failed minimum SLA targets, averaging a **28% late shipment rate** across peak manufacturing quarters.
+* **Defect Cost Burden:** Returned lots from underperforming suppliers resulted in an estimated **8.5% loss in operational throughput**.
+* **Lead-Time Volatility:** Unplanned lead-time variance spiked by **1.6x** among secondary tier vendors without automated PO confirmation protocols.
 
 ---
 
-## 🛠️ Data Pipeline & Architecture
-* **Data Modeling:** Built a normalized Star Schema linking procurement purchase orders, vendor master tables, and defect logs using Power BI and SQL.
-* **KPI Engineering:** Formatted DAX measures to calculate `On-Time Delivery Rate (%)`, `Defect Free Rate (%)`, `Vendor Spend Share`, and `Procurement Lead Time Variance`.
-* **Dashboard Design:** Designed an interactive executive dashboard featuring dynamic vendor scorecards, delivery risk matrices, and spend concentration breakdowns.
+## 💡 Strategic Business Recommendations
 
-```text
-├── data/               # Procurement purchase orders, vendor master, inspection records
-├── dashboards/         # Power BI (.pbix) files and high-res report screenshots
-├── sql/                # SQL scripts for data cleaning, aggregation, and SLA calculations
-└── README.md
+" **Tiered Vendor Scorecards:** Implement quarterly contract reviews tying repeat order allocations to vendor OTIF performance thresholds (>92%)."
+" **Dual-Sourcing Strategy:** Introduce secondary regional suppliers for critical product lines to mitigate high-dependency single-supplier bottlenecks."
+" **Automated SLA Penalty Tracking:** Automate chargeback calculations for deliveries delayed beyond agreed contractual grace periods (>48 hours delay)."
+" **Early Risk Escalation:** Establish threshold alerts within procurement workflows when supplier lead times trend upwards for two consecutive billing cycles"
+
+---
+
+## 🚀 How to Explore This Project
+
+1. **Review SQL Scripts:** Open `/sql` to inspect data cleaning, transformation, and SLA aggregation queries.
+2. **Open Power BI Dashboard:** Download the `.pbix` file located in `/dashboards` to interact with slicers, vendor scorecards, and spend analytics.
+3. **Review Data Dictionary:** Inspect `/data` for table schemas, field definitions, and transactional sample records.
+
+---
+
+## 👤 Author
+
+**Prashant Marathe**  
+" **LinkedIn:** [linkedin.com/in/prashantmarathe17](https://www.linkedin.com/in/prashantmarathe17)"
+" **Portfolio Website:** [prashant-marathe.framer.website](https://prashant-marathe.framer.website/)"  
+" **Email:** [p04747391@gmail.com](mailto:p04747391@gmail.com)"  
+" **Location:** Pune, Maharashtra, India"
