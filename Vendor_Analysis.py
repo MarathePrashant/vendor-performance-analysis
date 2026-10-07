@@ -4,10 +4,8 @@ from sqlalchemy import create_engine
 import logging
 import time
 
-
-# ============================================================
 # 1. PROJECT DIRECTORIES
-# ============================================================
+
 
 # Get the folder where Vendor_Analysis.py is located
 BASE_DIR = Path(__file__).resolve().parent
@@ -22,9 +20,7 @@ LOG_DIR = BASE_DIR / "logs"
 LOG_DIR.mkdir(exist_ok=True)
 
 
-# ============================================================
 # 2. LOGGING CONFIGURATION
-# ============================================================
 
 logging.basicConfig(
     filename=LOG_DIR / "ingestion_db.log",
@@ -34,9 +30,8 @@ logging.basicConfig(
 )
 
 
-# ============================================================
 # 3. DATABASE CONNECTION
-# ============================================================
+
 
 # SQLite database will be created in the same folder
 # as Vendor_Analysis.py
@@ -48,9 +43,8 @@ engine = create_engine(
 )
 
 
-# ============================================================
 # 4. INGEST DATAFRAME INTO DATABASE
-# ============================================================
+
 
 def ingest_db(df, table_name, engine):
     """
@@ -70,9 +64,8 @@ def ingest_db(df, table_name, engine):
     )
 
 
-# ============================================================
 # 5. LOAD CSV FILES
-# ============================================================
+
 
 def load_raw_data():
     """
@@ -184,9 +177,9 @@ def load_raw_data():
     print("========================================")
 
 
-# ============================================================
+
 # 6. RUN SCRIPT
-# ============================================================
+
 
 if __name__ == "__main__":
     load_raw_data()
